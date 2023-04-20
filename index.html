@@ -8,57 +8,60 @@
 </head>
 
 <body>
-  <div class="header">
+  <aside class="header">
     <img class="header__img" src="./eisenhower-matrix.jpg">
-    <a class="header__link" 
-        href="https://goal-life.com/page/method/matrix-eisenhower">
+    <a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">
       Want more details?
     </a>
-  </div>
-  <div class="todo">
+  </aside>
+  <section class="todo">
     <div class="container">
-      <p class="todo__inner">
+      <article class="todo__inner">
         <label class="todo__title title" for="add-item">Add Item</label>
         <div class="todo__row-wrapper">
           <input class="task todo__field todo__field--add" id="add-item" type="text">
           <button class="todo__btn">Add</button>
         </div>
-      </p>
-      <h3 class="todo__title">Todo</h3>
-      <ul class="todo__list" id="incomplete-tasks">
-        <li class="todo__item">
-          <input class="todo__choice" type="checkbox">
-          <label class="task todo__lable">Pay Bills</label>
-          <input class="task todo__field todo__field--width" type="text">
-          <button class="edit todo__btn">Edit</button>
-          <button class="delete">
-            <img class="delete-icon" src="./remove.svg">
-          </button>
-        </li>
-        <li class="edit-mode todo__item">
-          <input class="todo__choice" type="checkbox">
-          <label class="task todo__lable todo__lable--none">Go Shopping</label>
-          <input class="task todo__field todo__field--width" type="text" value="Go Shopping">
-          <button class="edit todo__btn">Save</button>
-          <button class="delete">
-            <img class="delete-icon" src="./remove.svg">
-          </button>
-        </li>
-      </ul>
-      <h3 class="todo__title">Completed</h3>
-      <ul class="todo__list" id="completed-tasks">
-        <li class="todo__item">
-          <input class="todo__choice" type="checkbox" checked>
-          <label class="task todo__lable todo__lable--decor">See the Doctor</label>
-          <input class="task todo__field todo__field--width" type="text">
-          <button class="edit todo__btn">Edit</button>
-          <button class="delete">
-            <img class="delete-icon" src="./remove.svg">
-          </button>
-        </li>
-      </ul>
+      </article>
+      <article>
+        <h3 class="todo__title">Todo</h3>
+        <ul class="todo__list" id="incomplete-tasks">
+          <li class="todo__item">
+            <input class="todo__choice" type="checkbox">
+            <label class="task todo__lable">Pay Bills</label>
+            <input class="task todo__field todo__field--width" type="text">
+            <button class="edit todo__btn">Edit</button>
+            <button class="delete">
+              <img class="delete-icon" src="./remove.svg">
+            </button>
+          </li>
+          <li class="edit-mode todo__item">
+            <input class="todo__choice" type="checkbox">
+            <label class="task todo__lable todo__lable--none">Go Shopping</label>
+            <input class="task todo__field todo__field--width" type="text" value="Go Shopping">
+            <button class="edit todo__btn">Save</button>
+            <button class="delete">
+              <img class="delete-icon" src="./remove.svg">
+            </button>
+          </li>
+        </ul>
+      </article>
+      <article>
+        <h3 class="todo__title">Completed</h3>
+        <ul class="todo__list" id="completed-tasks">
+          <li class="todo__item">
+            <input class="todo__choice" type="checkbox" checked>
+            <label class="task todo__lable todo__lable--decor">See the Doctor</label>
+            <input class="task todo__field todo__field--width" type="text">
+            <button class="edit todo__btn">Edit</button>
+            <button class="delete">
+              <img class="delete-icon" src="./remove.svg">
+            </button>
+          </li>
+        </ul>
+      </article>
     </div>
-  </div>
+  </section>
   <script src="app.js"></script>
 </body>
 
